@@ -16,6 +16,7 @@
     --grey: #BABABA;
     --off-white: #FAF8F7;
     --white: #FFFFFF;
+    --table-text:#B5B0AC;
     /*Tipografías*/
     --font-DMSans: "DM Sans", sans-serif;
     --font-inter: "Inter", sans-serif;
@@ -137,4 +138,84 @@ main {
     font-weight: 500;
     line-height: 1.6rem;
     color: #757575;
+}
+.main-tables-container{
+    border: solid red 2px;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 101px);
+    grid-template-rows: repeat(5, 39px);
+    grid-template-areas: "title title" "bitcoin" "bnum" "ethereum" "ethnum" "ripple" "ripnum" "stellar" "stenum";
+}
+.main-tables-container h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: #FF9536;
+    grid-area: title;
+}
+.bitcoin {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--table-text);
+    grid-area: bitcoin;
+}
+.ethereum {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--table-text);
+    grid-area: ethereum;
+}
+.ripple {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--table-text);
+    grid-area: ripple;
+}
+.stellar {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--table-text);
+    grid-area: stellar;
+}
+.bnum {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--table-text);
+    grid-area: bnum;
+}
+.ethnum {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--table-text);
+    grid-area: ethnum;
+}
+.ripnum {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--table-text);
+    grid-area: ripnum;
+}
+.stenum {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--table-text);
+    grid-area: stenum;
 }
