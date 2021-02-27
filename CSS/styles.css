@@ -316,6 +316,10 @@ main {
     border-radius: 8px;
 }
 /*-------GRID STYLES FOR COMISSIONS TABLE---------*/
+.main-tables-comissions {
+    width: 202px;
+    margin: 0 auto;
+}
 .main-tables-comissions--title {
     width: 202px;
     font-family: var(--font-inter);
@@ -323,17 +327,18 @@ main {
     font-weight: bold;
     line-height: 23px;
     margin: 40px 0 12px 0;
-    padding-left: 24px;
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
     color: var(--secondary-blue);
 }
 .main-tables-comissions--table {
     height: auto;
     width: 202px;
     display: grid;
+    gap: 1px;
     margin: 0 auto;
     border-radius: 8px;
-    gap: 2px; 
-    background-color: var(--white);
     justify-content: center; 
     margin-bottom: 16px; 
     grid-template-columns: repeat(2, 101px);
@@ -350,6 +355,10 @@ main {
 p.amnt {
     text-align: center;
     color: var(--table-currency);
+    background-color: var(--white);
+}
+p.index {
+    background-color: var(--white);
 }
 .main-tables-comissions--update {
     width: 173px;
