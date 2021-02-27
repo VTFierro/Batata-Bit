@@ -17,6 +17,7 @@
     --off-white: #FAF8F7;
     --white: #FFFFFF;
     --table-text:#B5B0AC;
+    --table-currency:#757575;
     /*Tipografías*/
     --font-DMSans: "DM Sans", sans-serif;
     --font-inter: "Inter", sans-serif;
@@ -139,7 +140,7 @@ main {
     line-height: 1.6rem;
     color: #757575;
 }
-/*-------GRID STYLES FOR EXCHANGE SECTION---------*/
+/*-------GRID STYLES FOR EXCHANGE TABLE---------*/
 .main-tables-container{
     height: auto;
     display: grid;
@@ -169,6 +170,7 @@ main {
 .bitcoin {
     height: 39px;
     padding: 10% 0 10% 12px;
+    font-family: var(--font-inter);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
@@ -182,6 +184,7 @@ main {
 .ethereum {
     height: 39px;
     padding: 10% 0 10% 12px;
+    font-family: var(--font-inter);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
@@ -194,6 +197,7 @@ main {
 .ripple {
     height: 39px;
     padding: 10% 0 10% 12px;
+    font-family: var(--font-inter);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
@@ -206,6 +210,7 @@ main {
 .stellar {
     height: 39px;
     padding: 10% 0 10% 12px;
+    font-family: var(--font-inter);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
@@ -219,13 +224,14 @@ main {
 .bnum {
     height: 39px;
     padding: 10% 0 10% 12px;
+    font-family: var(--font-inter);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
     border-radius: 0px 8px 0px 0px;
     text-align: left;
     letter-spacing: -0.02em;
-    color: var(--table-text);
+    color: var(--table-currency);
     background-color: var(--white);
     display: flex;
     justify-content:space-evenly;
@@ -235,12 +241,13 @@ main {
 .ethnum {
     height: 39px;
     padding: 10% 0 10% 12px;
+    font-family: var(--font-inter);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
     text-align: left;
     letter-spacing: -0.02em;
-    color: var(--table-text);
+    color: var(--table-currency);
     background-color: var(--white);
     display: flex;
     justify-content:space-evenly;
@@ -250,12 +257,13 @@ main {
 .ripnum {
     height: 39px;
     padding: 10% 0 10% 12px;
+    font-family: var(--font-inter);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
     text-align: left;
     letter-spacing: -0.02em;
-    color: var(--table-text);
+    color: var(--table-currency);
     background-color: var(--white);
     display: flex;
     justify-content:space-evenly;
@@ -265,13 +273,14 @@ main {
 .stenum {
     height: 39px;
     padding: 10% 0 10% 12px;
+    font-family: var(--font-inter);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
     border-radius: 0px 0px 8px 0px;
     text-align: left;
     letter-spacing: -0.02em;
-    color: var(--table-text);
+    color: var(--table-currency);
     background-color: var(--white);
     display: flex;
     justify-content:space-evenly;
@@ -299,7 +308,56 @@ main {
     height: 31px;
     margin: 0 auto;
     font-size: 1.2rem;
+    color: var(--warm-black);
     background-color: var(--soft-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+/*-------GRID STYLES FOR COMISSIONS TABLE---------*/
+.main-tables-comissions--title {
+    width: 202px;
+    font-family: var(--font-inter);
+    font-size: 1.9rem;
+    font-weight: bold;
+    line-height: 23px;
+    margin: 40px 0 12px 0;
+    padding-left: 24px;
+    color: var(--secondary-blue);
+}
+.main-tables-comissions--table {
+    height: auto;
+    width: 202px;
+    display: grid;
+    margin: 0 auto;
+    border-radius: 8px;
+    gap: 2px; 
+    background-color: var(--white);
+    justify-content: center; 
+    margin-bottom: 16px; 
+    grid-template-columns: repeat(2, 101px);
+    grid-template-rows: repeat(4, 39px);
+}
+.main-tables-comissions--table p {
+    font-family: var(--font-inter);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 10%;
+    color: var(--table-text);
+}
+p.amnt {
+    text-align: center;
+    color: var(--table-currency);
+}
+.main-tables-comissions--update {
+    width: 173px;
+    height: 31px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: var(--warm-black);
+    background-color: var(--soft-blue);
     display: flex;
     align-items: center;
     justify-content: center;
