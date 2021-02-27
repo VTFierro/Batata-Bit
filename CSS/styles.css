@@ -372,3 +372,43 @@ p.index {
     justify-content: center;
     border-radius: 8px;
 }
+/*--------------BENEFITS SECTION-------------*/
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 16px;
+    background-color: var(--warm-black);
+}
+.batatabit-isotype {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -11px;
+    left: calc(50% - 30px);
+    background-image: url(/assets/images/potato.svg);
+}
+.main-product-detail__title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.main-product-detail__title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
+}
+.main-product-detail__title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
