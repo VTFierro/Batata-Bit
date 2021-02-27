@@ -144,7 +144,7 @@ main {
     height: auto;
     display: grid;
     margin: 0 auto;
-    gap: 2px;
+    gap: 1px; 
     justify-content: center; 
     margin-bottom: 16px; 
     grid-template-columns: repeat(2, 101px);
@@ -172,6 +172,7 @@ main {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
+    border-radius: 8px 0px 0px 0px;
     text-align: left;
     letter-spacing: -0.02em;
     color: var(--table-text);
@@ -208,6 +209,7 @@ main {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
+    border-radius: 0px 0px 0px 8px;
     text-align: left;
     letter-spacing: -0.02em;
     color: var(--table-text);
@@ -220,10 +222,14 @@ main {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
+    border-radius: 0px 8px 0px 0px;
     text-align: left;
     letter-spacing: -0.02em;
     color: var(--table-text);
     background-color: var(--white);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
     grid-area: bnum;
 }
 .ethnum {
@@ -236,6 +242,9 @@ main {
     letter-spacing: -0.02em;
     color: var(--table-text);
     background-color: var(--white);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
     grid-area: ethnum;
 }
 .ripnum {
@@ -248,6 +257,9 @@ main {
     letter-spacing: -0.02em;
     color: var(--table-text);
     background-color: var(--white);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
     grid-area: ripnum;
 }
 .stenum {
@@ -256,10 +268,14 @@ main {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
+    border-radius: 0px 0px 8px 0px;
     text-align: left;
     letter-spacing: -0.02em;
     color: var(--table-text);
     background-color: var(--white);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
     grid-area: stenum;
 } 
 .bnum span, .ripnum span, .stenum span {
@@ -269,7 +285,6 @@ main {
     background-size: cover;
     width: 11px;
     height: 6px;
-    margin-left: 10.5px;
 }
 .ethnum span {
     display: inline-block;
@@ -278,5 +293,15 @@ main {
     background-size: cover;
     width: 11px;
     height: 6px;
-    margin-left: 10.5px;
+}
+.main-tables-container--update {
+    width: 173px;
+    height: 31px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    background-color: var(--soft-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
 }
