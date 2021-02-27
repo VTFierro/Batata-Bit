@@ -139,83 +139,144 @@ main {
     line-height: 1.6rem;
     color: #757575;
 }
+/*-------GRID STYLES FOR EXCHANGE SECTION---------*/
 .main-tables-container{
-    border: solid red 2px;
     height: auto;
     display: grid;
-    justify-content: center;
+    margin: 0 auto;
+    gap: 2px;
+    justify-content: center; 
+    margin-bottom: 16px; 
     grid-template-columns: repeat(2, 101px);
     grid-template-rows: repeat(5, 39px);
-    grid-template-areas: "title title" "bitcoin" "bnum" "ethereum" "ethnum" "ripple" "ripnum" "stellar" "stenum";
+    grid-template-areas: 
+        "title ." 
+        "bitcoin bnum" 
+        "ethereum ethnum" 
+        "ripple ripnum" 
+        "stellar stenum";
 }
 .main-tables-container h5 {
+    height: 39px;
+    padding: 10% 0 10% 12px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.3rem;
+    text-align: left;
     color: #FF9536;
     grid-area: title;
 }
 .bitcoin {
+    height: 39px;
+    padding: 10% 0 10% 12px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
+    text-align: left;
     letter-spacing: -0.02em;
     color: var(--table-text);
+    background-color: var(--white);
     grid-area: bitcoin;
 }
 .ethereum {
+    height: 39px;
+    padding: 10% 0 10% 12px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
+    text-align: left;
     letter-spacing: -0.02em;
     color: var(--table-text);
-    grid-area: ethereum;
+    background-color: var(--white);
+    grid-area: ethereum; 
 }
 .ripple {
+    height: 39px;
+    padding: 10% 0 10% 12px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
+    text-align: left;
     letter-spacing: -0.02em;
     color: var(--table-text);
+    background-color: var(--white);
     grid-area: ripple;
 }
 .stellar {
+    height: 39px;
+    padding: 10% 0 10% 12px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
+    text-align: left;
     letter-spacing: -0.02em;
     color: var(--table-text);
+    background-color: var(--white);
     grid-area: stellar;
 }
 .bnum {
+    height: 39px;
+    padding: 10% 0 10% 12px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
+    text-align: left;
     letter-spacing: -0.02em;
     color: var(--table-text);
+    background-color: var(--white);
     grid-area: bnum;
 }
 .ethnum {
+    height: 39px;
+    padding: 10% 0 10% 12px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
+    text-align: left;
     letter-spacing: -0.02em;
     color: var(--table-text);
+    background-color: var(--white);
     grid-area: ethnum;
 }
 .ripnum {
+    height: 39px;
+    padding: 10% 0 10% 12px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
+    text-align: left;
     letter-spacing: -0.02em;
     color: var(--table-text);
+    background-color: var(--white);
     grid-area: ripnum;
 }
 .stenum {
+    height: 39px;
+    padding: 10% 0 10% 12px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
+    text-align: left;
     letter-spacing: -0.02em;
     color: var(--table-text);
+    background-color: var(--white);
     grid-area: stenum;
+} 
+.bnum span, .ripnum span, .stenum span {
+    display: inline-block;
+    background-image: url(/assets/icons/trending-down.svg);
+    background-position: center;
+    background-size: cover;
+    width: 11px;
+    height: 6px;
+    margin-left: 10.5px;
+}
+.ethnum span {
+    display: inline-block;
+    background-image: url(/assets/icons/trending-up.svg);
+    background-position: center;
+    background-size: cover;
+    width: 11px;
+    height: 6px;
+    margin-left: 10.5px;
 }
