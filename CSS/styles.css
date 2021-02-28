@@ -482,7 +482,7 @@ p.index {
 .main-plans-container {
     width: 100%;
     min-width: 320px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
     text-align: center;
 }
 .plans--title {
@@ -603,4 +603,36 @@ p.index {
 }
 .plans-container--slider::-webkit-scrollbar-thumb {
     background-color: var(--bitcoin-orange);
+}
+/* ---------------------- FOOTER STYLES -------------------*/
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li {
+    margin: 10px 0;
+}
+.left a {
+    text-decoration: none;
+    color: var(--white);
+}
+.left a:hover {
+    color: var(--bitcoin-orange);
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
 }
