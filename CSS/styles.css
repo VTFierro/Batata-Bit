@@ -134,7 +134,7 @@ main {
     color: var(--black);
 }
 .main-exchange-container--title p {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
@@ -330,6 +330,7 @@ main {
     display: flex;
     justify-content: left;
     padding-left: 10px;
+    padding-top: 15px;
     color: var(--secondary-blue);
 }
 .main-tables-comissions--table {
@@ -638,6 +639,7 @@ footer section {
 }
 .tables {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 316px;
     overflow-x: scroll;
@@ -646,5 +648,8 @@ footer section {
 }
 .tables__currency, .tables__comissions {
     display: block;
-    margin-left: 10px;
+    margin-left: 20px;
+}
+.tables__currency {
+    margin-top: 35px;
 }
