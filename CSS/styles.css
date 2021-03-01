@@ -636,3 +636,15 @@ footer section {
     border-radius: 4px;
     padding: 4px;
 }
+.tables {
+    display: flex;
+    align-items: center;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.tables__currency, .tables__comissions {
+    display: block;
+    margin-left: 10px;
+}
